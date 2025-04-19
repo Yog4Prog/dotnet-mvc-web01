@@ -38,4 +38,4 @@ jobs:
            dotnet restore WebApp01.sln
            dotnet build WebApp01.sln
            echo "Listing File after build"
-           ls -ltR
+           Get-ChildItem -Recurse | Sort-Object LastWriteTime -Descending
