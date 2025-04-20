@@ -4,6 +4,6 @@
   </PropertyGroup>
 
   <Target Name="Build">
-    <MSBuild Projects="$(SolutionFile)" Targets="Build" Verbosity="Detailed"/>
+    <MSBuild Projects="$(SolutionFile)" Targets="Build" />
   </Target>
 </Project>
