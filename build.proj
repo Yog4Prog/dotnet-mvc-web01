@@ -1,0 +1,9 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SolutionFile>MySolution.sln</SolutionFile>
+  </PropertyGroup>
+
+  <Target Name="Build">
+    <MSBuild Projects="$(SolutionFile)" Targets="Build" Verbosity="Detailed"/>
+  </Target>
+</Project>

@@ -36,6 +36,6 @@ jobs:
       - name: Run a multi-line script
         run: |
            dotnet restore WebApp01.sln
-           dotnet build WebApp01.sln /p:StaticWebAssets=true
+           dotnet msbuild /t:Build /p:Configuration=Release build.proj
            echo "Listing File after build"
            ls -ltR
