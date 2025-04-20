@@ -37,5 +37,5 @@ jobs:
         run: |
            dotnet new razor -n TestStaticAssets
            cd TestStaticAssets
-           dotnet build
+           dotnet build -v:diag 
            ls obj/Debug/net8.0/
